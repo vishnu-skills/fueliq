@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: black;
+  color: white;
+}
+
+/* Header styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #000;
+}
+
+.header img {
+  width: 5rem;
+  height: 5rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+nav a:hover {
+  color: rgb(255, 166, 0);
+}
+
+
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.fuel-drops {
+  position: relative;
+  overflow: hidden;
+}
+
+.fuel-drops button {
+  position: absolute;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1em;
+  color: rgb(255, 190, 67);
+  background-color: rgba(255, 254, 254, 0);
+  border: 5px solid rgb(255, 255, 255);
+  cursor: pointer;
+  left: 70%;
+  top: 25%;
+  font-weight: bold;
+}
+
+.logo-container img {
+  width: 100%;
+  height: auto;
+}
+
+.drop1 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 150px;
+  left: 15%;
+  border-radius: 50% 0 50% 50%;
+  rotate: -45deg;
+  background-color: goldenrod;
+  box-shadow: 0 0 5px 0.5px white;
+  animation: Fuelanimate 7s linear infinite;
+  scale: 0.1;
+}
+
+.drop2 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 150px;
+  left: 15%;
+  border-radius: 50% 0 50% 50%;
+  rotate: -45deg;
+  background-color: goldenrod;
+  box-shadow: 0 0 5px 0.5px white;
+  animation: Fuelanimate 7s linear infinite;
+  animation-delay: 3.5s;
+  scale: 0.1;
+}
+
+@keyframes Fuelanimate {
+  50% {
+    top: 400px;
+    scale: 1;
+  }
+  100% {
+    top: 400px;
+  }
+}
+
+.fuel-wave {
+  width: 100%;
+  height: 180px;
+  background-color: goldenrod;
+  border-radius: 0px 0px 20px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.fuel-wave:after {
+  content: "";
+  position: absolute;
+  width: 800px;
+  height: 900px;
+  top: -800px;
+  left: 250px;
+  background: #000;
+}
+
+.fuel-wave:after {
+  border-radius: 45%;
+  animation: fuel-wave 5s linear infinite;
+}
+
+@keyframes fuel-wave {
+  0% {
+    transform: rotate(0deg);
+    border-radius: 80% 40% 40% 40%;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+@media (max-width: 480px) {
+  .header img {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+}

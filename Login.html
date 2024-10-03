@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Vishnu" />
+    <meta name="description" content="Fuel_IQ" />
+    <meta name="keywords" content="HTML, HTML5" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Login.css" />
+    <title>FuelIQ Login</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <a href="index.html"><img src="logo.png" alt="logo_image" /></a> 
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="login-container">
+
+        <h2>Log in</h2>
+        <img src="logo.png" alt="logo_image"  />
+
+        <form action="Greet.html" method="GET">
+
+            <div class="inputbox1">
+                <input type="email" placeholder="Email" name="email" required />
+                <i class="fa-regular fa-envelope"></i>
+            </div>
+
+            <div class="inputbox2">
+                <input type="password" placeholder="Password"  name="password" id="password"  required/>
+                <i class="fa-solid fa-unlock-keyhole"></i>
+                <span id="toggleBtn"> </span>
+            </div>
+
+            <div class="create-submit">
+                <a href="">Create a new account</a>
+                <button type="submit" >Submit</button>
+            </div>
+        </form>
+
+    </div>
+    <script src="login.js">
+    </script>
+
+</body>
+
+</html>

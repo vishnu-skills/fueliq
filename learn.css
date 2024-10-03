@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: black;
+  color: white;
+}
+
+/* Header styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #000;
+}
+
+.header img {
+  width: 5rem;
+  height: 5rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+nav a:hover {
+  color: rgb(255, 166, 0);
+}
+
+/* learn  */
+
+.Learn-container {
+  padding: 10% 0;
+  text-align: center;
+  line-height: 2;
+}
+
+.Learn-container p {
+  font-size: 2rem;
+  color: rgb(255, 166, 0);
+  margin: 0;
+}
+
+.Learn-container a {
+  margin-right: 10px;
+  color: white;
+  text-decoration: none;
+  border: 2px solid rgb(255, 166, 0);
+  border-radius: 10px;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.Learn-container a:hover {
+  background-color: rgb(255, 166, 0);
+  color: black;
+  box-shadow: 0 0 5px white, 0 0 25px rgb(255, 166, 0), 0 0 50px white,
+    0 0 200px rgb(255, 166, 0);
+  -webkit-box-reflect: below 1px linear-gradient(transparent, rgb(255, 166, 0));
+}
+
+@media (max-width: 480px) {
+  .header img {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+
+  .Learn-container p {
+    font-size: 1.2rem;
+  }
+
+  .Learn-container a {
+    padding: 6px 10px;
+  }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Vishnu" />
+    <meta name="description" content="Fuel_IQ" />
+    <meta name="keywords" content="HTML, HTML5" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="greet.css" />
+    <title>FuelIQ_Greet</title>
+</head>
+
+<body>
+
+
+    <div class="header">
+        <a href="index.html"><img src="logo.png" alt="logo_image" /></a> 
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <h1 class="heading">Know your fuel, pay what's Right...</h1>
+        <div class="buttons">
+            <button onclick="OnLearn()">LEARN MORE</button>
+            <button onclick="OnNow()">BUY NOW</button>
+            <button onclick="OnFuellevel()">VIEW YOUR FUEL LEVEL</button>
+        </div>
+    </div>
+
+
+    <script>
+
+        function OnLearn() {
+            window.open("Learn.html","_self");
+        }
+        
+        function OnNow() {
+            window.open("BuyNow.html","_self");
+        }
+        
+        function OnFuellevel() {
+            window.open("Fuellevel.html","_self");
+        }
+    </script>
+
+</body>
+
+</html>
